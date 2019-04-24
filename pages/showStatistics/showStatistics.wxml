@@ -1,0 +1,17 @@
+<!--pages/showStatistics/showStatistics.wxml-->
+<import src="../statistics_template.wxml"/>
+
+<view class="table">
+  <view class="tr bg-w">
+  <view class="th">学号</view>
+    <view class="th">姓名</view>
+    <view class="th ">出勤次数</view>
+    <view class="th ">出勤率</view>
+  </view>
+</view>
+
+<view class='list' wx:for="{{statisticsData}}" 
+wx:key='{{i}}'>              
+  <template is='statistics' data='{{...item}}'/>
+
+</view>

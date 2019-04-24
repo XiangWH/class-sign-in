@@ -1,0 +1,27 @@
+﻿
+{
+  "pages": [
+    "pages/index/index",
+    "pages/register/register",
+    "pages/teacher/teacher",
+    "pages/student/student",
+    "pages/createCourse/createCourse",
+    "pages/changeCourse/changeCourse",
+    "pages/showStatistics/showStatistics",
+    "pages/showStatistics2/showStatistics2"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "课堂考勤",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

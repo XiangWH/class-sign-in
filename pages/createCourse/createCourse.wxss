@@ -1,0 +1,9 @@
+/* pages/createCourse/createCourse.wxss */
+
+.section{
+  font-size: 12px;padding: 10px;border-top : solid 1px #eee;
+}
+
+.tip{
+  text-align: center;font-size: 20px;color: red;
+}

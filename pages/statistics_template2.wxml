@@ -1,0 +1,11 @@
+<template name='statistics2' >
+    
+  <block>
+    <view class="tr bg-g">
+      
+      <view class="td">{{count}}</view>
+      <view class="td">{{rate}}</view>
+    </view>
+  </block>
+
+</template>

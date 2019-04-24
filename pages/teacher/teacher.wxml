@@ -1,0 +1,14 @@
+<!--pages/teacher.wxml-->
+<import src="../course_template.wxml"/>
+
+<view class='top'>
+    
+  <button class='button' size='mini'  type='primary' bindtap='createCourse'>创建课程</button>
+    
+</view> 
+
+<view class='list' wx:for="{{coursesOfTeacher}}" 
+wx:key='{{i}}' data-id='{{courseId}}' >              
+  <template is='courses' data='{{...item}}'/>
+
+</view>

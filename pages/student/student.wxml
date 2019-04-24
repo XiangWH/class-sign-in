@@ -1,0 +1,18 @@
+<!--pages/student.wxml-->
+<import src="../course2.wxml"/>
+
+<view class="container">
+  <form bindsubmit='formSubmit'>
+    <input class="inputId" name="courseId" placeholder="输入课程号" ></input>  
+    <view class="top">
+    <button class='button' size='mini' type='primary' formType="submit">加入课程</button>
+    </view>
+    <view class='tip'> <text ></text>提醒：每堂课签到三次，每次签到持续五分钟</view>
+  </form>
+</view>
+
+<view class='list' wx:for="{{coursesOfStudent}}" 
+wx:key='{{i}}' data-id='{{courseId}}' >              
+  <template is='studentCourses' data='{{...item}}'/>
+
+</view>

@@ -1,0 +1,13 @@
+
+<template name='statistics' >
+    
+  <block>
+    <view class="tr bg-g">
+      <view class="td">{{userNumber}}</view>
+      <view class="td">{{name}}</view>
+      <view class="td">{{count}}</view>
+      <view class="td">{{rate}}</view>
+    </view>
+  </block>
+
+</template>

@@ -1,0 +1,54 @@
+/* pages/student.wxss */
+
+/* pages/teacher.wxss */
+/* pages/teacher.wxss */
+.top{
+    margin: 40rpx 30rpx 30rpx 20rpx;
+    text-align: center;
+}
+
+.button{
+    margin-top: 2rpx;
+}
+
+.template{
+    margin: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.info{
+  font-size: 25rpx;
+  text-align: center;
+}
+.position{
+  height: 40rpx;
+  position: relative;
+  display: flex;
+  
+  margin-bottom:5rpx;
+}
+
+.list{
+    margin: 10rpx;
+    border-top:  1px solid gainsboro;
+}
+.color{
+  color: blue;
+}
+.container{
+  justify-content: flex-start;
+  padding: 30rpx 0;
+}
+
+.container input{
+  background-color: #eee;
+  border-radius: 3px;
+  text-align: left;
+  width: 720rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 20rpx;
+}
+.tip{
+  text-align: center;
+  color:blue
+}

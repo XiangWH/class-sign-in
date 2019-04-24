@@ -1,0 +1,94 @@
+<!--pages/createCourse/createCourse.wxml-->
+
+<form bindsubmit = "formSubmit">
+<view class="weui-cells weui-cells_after-title">
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">课程名称</view>
+      </view>
+      <view class="weui-cell__bd">
+      <input name="courseName" class="weui-input" placeholder="请输入课程名称"></input>
+      </view>
+    </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">上课周数</view>
+    </view>
+    <view class="weui-cell__bd">
+    <input name="totalNumber" class="weui-input" placeholder="请输入上课周数"></input>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">上课星期</view>
+    </view>
+    <view class="weui-cell__bd">
+    <picker name="week" bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="weui-input">
+        <view class="picker">{{array[index]}}（点击选择）</view>
+    </picker>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">上课时间</view>
+    </view>
+    <view class="weui-cell__bd">
+    <picker name = "startTime" mode="time" value="{{startTime}}" bindchange="bindTimeChange1" class="weui-input">
+    <view class="picker">{{startTime}}（点击选择）</view>
+  </picker>
+    </view>
+  </view>
+    
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">课中签到时间</view>
+    </view>
+    <view class="weui-cell__bd">
+    <picker name = "inCourse" mode="time" value="{{inCourse}}" bindchange="bindTimeChange2" class="weui-input">
+    <view class="picker">{{inCourse}}（点击选择）</view>
+  </picker>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">下课时间</view>
+    </view>
+    <view class="weui-cell__bd">
+    <picker name = "endTime" mode="time" value="{{endTime}}" bindchange="bindTimeChange3" class="weui-input">
+    <view class="picker">{{endTime}}（点击选择）</view>
+  </picker>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">上课地点</view>
+    </view>
+    <view class="weui-cell__bd">    
+      <button class="weui-input" bindtap="getPlace" size='mini'>点击定位</button>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">课程号</view>
+    </view>
+    <view class="weui-cell__bd">    
+      <button class="weui-input" bindtap="createCourseId" size='mini'>点击生成</button>
+    </view>
+  </view>
+
+</view>
+
+<view class='section'>
+  <button type='primary' form-type='submit'>提交</button>
+</view>
+<view class="weui-cell weui-cell_input">
+<text class="tip" value="{{tip}}">{{tip}}</text>
+</view>
+</form>

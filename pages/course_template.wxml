@@ -1,0 +1,15 @@
+//
+
+<template name='courses' data-id='{{courseId}}'>
+    <button bindtap="open" data-id='{{courseId}}' data-id2='{{totalNumber}}'>
+      <view class='position'> <text class='info'>课程号：{{courseId}}</text></view> 
+      <view class='position'> <text class='info color'>课程名称：{{courseName}}</text></view>
+      <view class='position'> <text class='info'>上课时间：{{startTime}}</text> </view>
+      <view class='position'> <text class='info'>课中签到：{{inCourse}}</text> </view>
+      <view class='position'> <text class='info'>下课时间：{{endTime}}</text> </view>
+      <view class='position'> <text class='info'>上课星期：{{week}}</text> </view>
+      <view class='position'> <text class='info'>上课周数：{{totalNumber}}</text> </view>
+      
+    </button>
+
+</template>
