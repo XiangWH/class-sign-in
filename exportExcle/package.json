@@ -1,0 +1,19 @@
+{
+  "name": "exportexcle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "deploy": "mincloud deploy xxxxx ../"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {
+    "exceljs": "^1.9.1"
+  }
+}
